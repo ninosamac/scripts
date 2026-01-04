@@ -16,6 +16,8 @@ THEMES=(
     "dracula"
     "nord"
     "gruvbox"
+    "green"
+    "orange"
 )
 
 show_themes() {
@@ -81,6 +83,12 @@ switch_theme() {
                     ;;
                 "gruvbox")
                     echo -e "\033]10;#ebdbb2\007\033]11;#282828\007"
+                    ;;
+                "green")
+                    echo -e "\033]10;#00ff00\007\033]11;#000000\007"
+                    ;;
+                "orange")
+                    echo -e "\033]10;#ff8800\007\033]11;#000000\007"
                     ;;
             esac
             ;;
